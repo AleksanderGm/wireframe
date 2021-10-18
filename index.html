@@ -16,20 +16,25 @@
     <div class="phone">
         <!--Start - Topp del mobil-->
     <div class="top">
-        <meny class="sidebar">
-            <div class="meny1"></div>
-            <div class="meny2"></div>
-            <div class="meny2"></div>
-        </meny>
+        <div class="buttonsidebar">
+            <button class="openbtn" onclick="openNav()">Acc</button>  
+        </div>
         <div class="logo">
             <h1 class="BiK">Bo i Kollektiv</h1>
-            <img src="/Bilder/—Pngtree—village house logo real estate_3628984.png" alt="Logo of a house">
+            <img src="/Bilder/Logo.png" alt="Logo of a house">
         </div>
-        <div class="login">
+            <div class="login">
             <h4>Login</h4>
         </div>
     </div>
         <!--Slutt - Topp del mobil-->
+        <!--Start - Filtrering/hybelvenner-->
+    <div class="filtrering">
+        <div>Filter</div>
+        <div>Hybelvenner</div>
+    </div>
+        <!--Slutt - Filtrering/hybelvenner-->
+        <!--Start - Hoveddel, Annonser-->
     <section id="annonser">
         <div class="annonser">
             <img class="img-annonser" src="/Bilder/Hus-3.jpeg" alt="Nice picture of a house">
@@ -48,12 +53,31 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quis sunt maiores alias quibusdam a sint tenetur obcaecati ea aliquid?</p>
         </div>
     </section>
-
+        <!--Slutt - Hoveddel, Annonser-->
     </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
 </header>
     
 
 
 </div>
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
 </body>
 </html>

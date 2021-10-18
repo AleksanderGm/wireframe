@@ -30,7 +30,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100%;
   height: 100vh;
@@ -38,16 +38,20 @@ body {
 
 .top {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: 19% 62% 19%;
+  border-bottom: 1px solid black;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.3);
 }
 
-.sidebar {
+.buttonsidebar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 0px;
   border: 2px solid black;
+}
+.sidebar button {
 }
 /*  Venstre ikon/sidebar
     Fant logo på: https://www.w3schools.com/howto/howto_css_menu_icon.asp */
@@ -105,4 +109,69 @@ h1,
 
 .annonser p {
   width: 250px;
+}
+
+.filtrering {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.filtrering div {
+  border: 2px solid black;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.3);
+  margin-top: -3px;
+}
+
+/* Fant her: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
+/* The sidebar menu */
+.sidebar {
+  height: 50%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: relative; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: -77px;
+  left: -400px;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: relative;
+  top: -65px;
+  right: -120px;
+  font-size: 36px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
