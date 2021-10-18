@@ -1,3 +1,4 @@
+Alle gruppers repositories (for hjelp/inspirasjon):
 https://gruppe-6b.github.io/
 
 https://torkelhi.github.io/Visittkort/
