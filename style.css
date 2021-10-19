@@ -15,11 +15,13 @@
 .phone {
   width: 375px;
   height: 667px;
-  border-top: 40px solid #1f2020;
-  border-bottom: 60px solid #1f2020;
-  border-left: 25px solid #1f2020;
-  border-right: 25px solid #1f2020;
+  border-top: 40px solid #e6c7c2;
+  border-bottom: 60px solid #e6c7c2;
+  border-left: 25px solid #e6c7c2;
+  border-right: 25px solid #e6c7c2;
   border-radius: 20px;
+  margin-left: 200px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.3);
 }
 /* Mobilen - Slutt  */
 
@@ -122,11 +124,11 @@ h1,
 /* Fant her: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
 /* The sidebar menu */
 .sidebar {
-  height: 50%; /* 100% Full-height */
+  height: 607px; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: relative; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: -77px;
+  top: -10px;
   left: -400px;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
