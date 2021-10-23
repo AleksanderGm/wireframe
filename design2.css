@@ -9,6 +9,8 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+/*Navbar, sidebar-hjem-logg in*/
+/*Start*/
 .header {
   display: flex;
   align-items: center;
@@ -20,8 +22,13 @@ body {
   width: 30px;
 }
 
-.header .header div {
+.header .header a {
   font-size: 10px;
+}
+
+#login {
+  text-decoration: none;
+  color: black;
 }
 
 .header #span2 {
@@ -33,3 +40,44 @@ body {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+/*Slutt*/
+
+/*Subbaren, filtrering og hybelvenner*/
+/*Start*/
+.subheader {
+  display: flex;
+  margin: 0 auto 15px auto;
+  justify-content: space-evenly;
+}
+
+.subheader a {
+  text-decoration: none;
+  color: black;
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 2px 2px 8px #888;
+}
+/*Slutt*/
+
+/*Hoveddel, artikler*/
+/*Start*/
+.flex-down {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-down li {
+  display: flex;
+  margin: 5px 0px 25px 0;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.flex-down li img {
+  width: 100px;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+/*Slutt*/
