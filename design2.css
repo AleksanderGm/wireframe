@@ -40,6 +40,14 @@ body {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+
+.sidelog {
+  width: 70px;
+}
+
+#hamburger {
+  margin: 5px auto 0 20px;
+}
 /*Slutt*/
 
 /*Subbaren, filtrering og hybelvenner*/
