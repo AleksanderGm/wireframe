@@ -28,10 +28,22 @@
             </a>
         </header>
 
+        <!--
+        Forsøk på å lage en dropdown bar. 
+        Bruker guide fra: https://www.w3schools.com/howto/howto_css_dropdown.asp*/
+        -->
         <div class="subheader">
-            <a href="Sider/filtrering.html">
-                Filtrering
-            </a>
+            <div class="dropdown">
+                <button class="dropbtn">Filtrering</button>
+                <div class="dropdown-content">
+                    <a href="#">Skole</a>
+                    <a href="#">Pris</a>
+                    <a href="#">Område</a>
+                    <a href="#">Kjønn</a>
+                    <a href="#">Antall beboere</a>
+                </div>
+              </div>
+
             <a href="hybelvenner.html" id="line">
                 Hybelvenner
             </a>
@@ -80,11 +92,11 @@
         <div>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <img src="bilder-prototype/portrait-square-03.jpeg" alt="">
-            <a href="#">Login / Registrer</a>
-            <a href="#">Chat</a>
-            <a href="#" class="lasta">Legg ut annonse</a>
-            <a href="#">Mine annonser</a>
-            <a href="#">Kontakt oss</a>
+            <a class="choices" href="#">Login / Registrer</a>
+            <a class="choices" href="#">Chat</a>
+            <a class="choices" href="#" class="lasta">Legg ut annonse</a>
+            <a class="choices" href="#">Mine annonser</a>
+            <a class="choices" href="#">Kontakt oss</a>
         </div>
           </div>
 
