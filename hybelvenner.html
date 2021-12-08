@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Mest brukte enkoderen for kunne bruke karakterer-->
+        <meta name="viewport" content="initial-scale=1.0">
+        <!--For at mobiltelefoner ikke blir zooma ut som en "desktop", for at det skal se bra ut på telefoner-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Sier til "microsoft internett explorer" at den skal bruke den seneste/nyeste "rendering engine"-->
+        <link rel="stylesheet" href="design2.css">
+        <title>Wireframe</title>
+    </head>
+    <body>
+        <header class="header">
+                <div id="main" class="sidelog">
+                    <button class="openbtn" onclick="openNav()">☰</button>  
+                </div>
+            <a href="#">
+                <div id="span2">
+                    <img src="bilder-prototype/test1.png" alt="" class="nav">
+                    <img src="bilder-prototype/test.png" alt="" class="logo">
+                </div>
+            </a>
+            <a href="Sider/login.html" id="login" class="sidelog">
+                <div>
+                    LOGG IN
+                </div>
+            </a>
+        </header>
+
+        <div class="subheader">
+            <a href="index.html">
+                Hybler
+            </a>
+            <a href="#" id="line">
+                Filtrering
+            </a>
+        </div>
+
+        <ul class="flex-down">
+            <li>
+                <img src="bilder-prototype/portrait-square-06.jpeg" alt="">
+                <p> 
+                    <b>Elise Trønsett</b>
+                    <br><br>
+                    Utadvendt jente som liker jogging og ta bilder.
+                </p>
+            </li>
+            <li>
+                <img src="bilder-prototype/portrait-square-05.jpeg" alt="">
+                <p> <b>Adam Nordmann</b>
+                    <br><br>
+                    Gamer, liker å være på rommet mesteparten av tiden. 
+                    I helgen pleier jeg å dra ut for å feste.
+                </p>
+            </li>
+            <li>
+                <img src="bilder-prototype/portrait-square-08.jpeg" alt="">
+                <p> <b>Hegesett</b>
+                    <br><br>
+                    Hyggelig jente som liker å være blandt andre, 
+                    jeg er glad å ri og jogge.
+                </p>
+            </li>
+            <li>
+                <img src="bilder-prototype/portrait-square-06.jpeg" alt="">
+                <p> <b>Elise Trønsett</b>
+                    <br><br>
+                    Utadvendt jente som liker jogging og ta bilder.
+                </p>
+            </li>
+            <li>
+                <img src="bilder-prototype/portrait-square-05.jpeg" alt="">
+                <p> <b>Adam Nordmann</b>
+                    <br><br>
+                    Gamer, liker å være på rommet mesteparten av tiden. 
+                    I helgen pleier jeg å dra ut for å feste.                
+                </p>
+            </li>
+            <li>
+                <img src="bilder-prototype/portrait-square-08.jpeg" alt="">
+                <p> <b>Else Hegesett</b>
+                    <br><br>
+                    Hyggelig jente som liker å være blandt andre, 
+                    jeg er glad å ri og jogge.
+                </p>
+            </li>
+        </ul>
+
+        <div id="mySidebar" class="sidebar">
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="bilder-prototype/portrait-square-03.jpeg" alt="">
+            <a href="#">Login / Registrer</a>
+            <a href="#">Chat</a>
+            <a href="#" class="lasta">Legg ut annonse</a>
+            <a href="#">Mine annonser</a>
+            <a href="#">Kontakt oss</a>
+        </div>
+          </div>
+
+        <div class="wide">
+            <a class="buttonwide" href="Wireframe-design/wireframe.html">Wireframe</a>
+        </div>
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+
+    </body>
+</html>
+
+

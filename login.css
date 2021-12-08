@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #edf6f9;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #006d77;
+  box-shadow: 5px 5px 10px #888;
+}
+
+.header div img {
+  width: 30px;
+}
+
+.header .header a {
+  font-size: 10px;
+}
+
+#login {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header #span2 {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.header #span2 .nav {
+  width: 120px;
+}
+
+.sidelog {
+  width: 70px;
+}
+
+#hamburger {
+  margin: 5px auto 0 20px;
+}
+
+.container,
+.text-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 140px;
+  font-size: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 15px #666;
+  background-color: #006d77;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  margin-bottom: -25px;
+}
+
+.text-input input {
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+
+.container button {
+  padding: 5px;
+  font-weight: bold;
+  width: 180px;
+}
+
+.container #logginn {
+  margin: 10px 0 30px 0;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #006d77; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar div {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  border: none;
+  margin-left: 0px;
+  width: 70px;
+}
+
+.openbtn:hover {
+  background-color: #fff;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.sidebar img {
+  border-radius: 50%;
+  width: 120px;
+  height: 125px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #818181;
+  position: relative;
+  border-radius: 50%;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus_up {
+  background-color: #818181;
+  width: 75px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.plus_down {
+  background-color: #818181;
+  width: 10px;
+  height: 75px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.wide {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wide a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #006d77;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 7px 0 0 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #888;
+}

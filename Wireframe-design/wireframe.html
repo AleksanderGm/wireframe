@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Mest brukte enkoderen for kunne bruke karakterer-->
+        <meta name="viewport" content="initial-scale=1.0">
+        <!--For at mobiltelefoner ikke blir zooma ut som en "desktop", for at det skal se bra ut på telefoner-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Sier til "microsoft internett explorer" at den skal bruke den seneste/nyeste "rendering engine"-->
+        <link rel="stylesheet" href="design2.css">
+        <title>Wireframe</title>
+    </head>
+    <body>
+        <header class="header">
+                <div id="main" class="sidelog">
+                    <button class="openbtn" onclick="openNav()">☰</button>  
+                </div>
+            <a href="#">
+                <div id="span2">
+                    <img src="Bilder/home3.png" alt="" class="nav">
+                </div>
+            </a>
+            <a href="Sider-wireframe/login.html" id="login" class="sidelog">
+                <div>
+                    LOGG IN
+                </div>
+            </a>
+        </header>
+
+        <div class="subheader">
+            <a href="Sider-wireframe/filtrering.html">
+                Filtrering
+            </a>
+            <a href="#" id="line">
+                Hybelvenner
+            </a>
+        </div>
+
+        <ul class="flex-down">
+            <li>
+                <img src="Bilder/wireframe.png" alt="">
+                <p> Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit.</p>
+            </li>
+            <li>
+                <img src="Bilder/wireframe.png" alt="">
+                <p> Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit.</p>
+            </li>
+            <li>
+                <img src="Bilder/wireframe.png" alt="">
+                <p> Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit.</p>
+            </li>
+            <li>
+                <img src="Bilder/wireframe.png" alt="">
+                <p> Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit.</p>
+            </li>
+            <li>
+                <img src="Bilder/wireframe.png" alt="">
+                <p> Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit. <br> <br>
+                    Lorem ipsum dolor sit.</p>
+            </li>
+        </ul>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="Bilder/wireframe.png" alt="">
+            <a href="#">Login/Sign up</a>
+            <a href="#">Chat</a>
+            <a href="#" class="lasta">Legg ut annonse
+                <div class="circle">
+                    <div class="plus_up"></div>
+                    <div class="plus_down"></div>
+                </div>
+            </a>
+
+          </div>
+
+        <div class="wide">
+            <a class="buttonwide" href="../index.html">Prototype</a>
+        </div>
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+
+    </body>
+</html>
+
+

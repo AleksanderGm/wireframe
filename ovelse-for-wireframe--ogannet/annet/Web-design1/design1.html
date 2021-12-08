@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wireframes</title>
+</head>
+<body>
+    <nav>
+        <h2>Gruppe 2B Wireframes virkeliggjøring</h2>
+    </nav>
+
+<header class="header">
+    <div class="phone">
+        <!--Start - Topp del mobil-->
+    <div class="top">
+        <div class="buttonsidebar">
+            <button class="openbtn" onclick="openNav()">Acc</button>  
+        </div>
+        <div class="logo">
+            <h1 class="BiK">Bo i Kollektiv</h1>
+            <img src="Bilder/Logo.png" alt="Logo of a house">
+        </div>
+            <div class="login">
+            <h4>Login</h4>
+        </div>
+    </div>
+        <!--Slutt - Topp del mobil-->
+        <!--Start - Filtrering/hybelvenner-->
+    <div class="filtrering">
+        <div>Filter</div>
+        <div>Hybelvenner</div>
+    </div>
+        <!--Slutt - Filtrering/hybelvenner-->
+        <!--Start - Hoveddel, Annonser-->
+    <section id="annonser">
+        <div class="annonser">
+            <img class="img-annonser" src="Bilder/Hus-3.jpeg" alt="Nice picture of a house">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quis sunt maiores alias quibusdam a sint tenetur obcaecati ea aliquid?</p>
+        </div>
+        <div class="annonser">
+            <img class="img-annonser" src="Bilder/Hus-3.jpeg" alt="Nice picture of a house">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quis sunt maiores alias quibusdam a sint tenetur obcaecati ea aliquid?</p>
+        </div>
+        <div class="annonser">
+            <img class="img-annonser" src="Bilder/Hus-3.jpeg" alt="Nice picture of a house">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quis sunt maiores alias quibusdam a sint tenetur obcaecati ea aliquid?</p>
+        </div>
+        <div class="annonser">
+            <img class="img-annonser" src="Bilder/Hus-3.jpeg" alt="Nice picture of a house">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quis sunt maiores alias quibusdam a sint tenetur obcaecati ea aliquid?</p>
+        </div>
+    </section>
+        <!--Slutt - Hoveddel, Annonser-->
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Lukk</a>
+        <a href="#">Registrer/Logg inn</a>
+        <a href="#">Chat</a>
+        <a href="#">Legg ut hybel</a>
+        <a href="#">Kontakt oss</a>
+      </div>
+</header>
+    
+
+
+</div>
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+</body>
+</html>

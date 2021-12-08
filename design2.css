@@ -9,13 +9,17 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+body {
+  background-color: #edf6f9;
+}
+
 /*Navbar, sidebar-hjem-logg in*/
 /*Start*/
 .header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: 1px solid black;
+  background-color: #006d77;
 }
 
 .header div img {
@@ -28,7 +32,7 @@ body {
 
 #login {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .header #span2 {
@@ -37,8 +41,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.header #span2 .nav {
+  width: 120px;
 }
 
 .sidelog {
@@ -56,15 +64,21 @@ body {
   display: flex;
   margin: 0 auto 15px auto;
   justify-content: space-evenly;
+  background-color: #00565e;
 }
 
 .subheader a {
   text-decoration: none;
-  color: black;
+  color: white;
   width: 50%;
   text-align: center;
-  border: 1px solid black;
+  border-top: 1px solid white;
   box-shadow: 2px 2px 8px #888;
+  padding: 3px 0 3px 0;
+}
+
+.subheader #line {
+  border-left: 1px solid white;
 }
 /*Slutt*/
 
@@ -86,6 +100,8 @@ body {
   width: 100px;
   margin-right: 25px;
   margin-left: 20px;
+}
+.flex-down li p img {
 }
 
 /*Slutt*/
@@ -119,7 +135,7 @@ body {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #006d77; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -130,9 +146,16 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #fff;
   display: block;
   transition: 0.3s;
+}
+
+.sidebar div {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -211,4 +234,28 @@ body {
   height: 75px;
   position: absolute;
   border-radius: 10px;
+}
+
+.wide {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wide a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #006d77;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 7px 0 0 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #888;
 }
