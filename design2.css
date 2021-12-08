@@ -139,14 +139,14 @@ body {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  box-shadow: 40px 40px 50px rgba(136, 136, 136, 0.692);
 }
 
 /* The sidebar links */
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  padding: 20px 10px 20px 10px;
   text-decoration: none;
-  font-size: 25px;
-  color: #fff;
+  font-size: 20px;
   display: block;
   transition: 0.3s;
 }
@@ -184,6 +184,7 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: white;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -203,10 +204,10 @@ body {
 
 .sidebar img {
   border-radius: 50%;
-  width: 120px;
-  height: 125px;
-  margin-left: 50px;
+  width: 190px;
   margin-bottom: 40px;
+  margin-top: 20px;
+  align-self: center;
 }
 
 .circle {
@@ -258,4 +259,14 @@ body {
   padding: 7px 0 0 0;
   border-radius: 10px;
   box-shadow: 2px 2px 8px #888;
+}
+
+/*Fikse på sidebaren litt, lage bokser rundt hvert valg så det ser med likt ut som prototype*/
+.choices {
+  border: 1px solid black;
+  width: 90%;
+  background-color: #dadada;
+  align-self: center;
+  text-align: justify;
+  color: #000;
 }
